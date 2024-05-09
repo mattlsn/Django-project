@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}首頁{% endblock %}
+
+{% block main %}
+    <h1>部落格列表</h1>
+    <div class="row row-cols-2 row-gap-4">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#">我的django</a>
+                </div>
+                <div class="card-body" style="height:100px">
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer text-body-secondary d-flex justify-content-between">
+                    <div>
+                        <img src="{% static 'image/ironman.jpg' %}" class="rounded-circle" width="30" height="30" alt="">
+                        Matt
+                    </div>
+                    <div>
+                        發布時間: 2024年5月5號 12:00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#">我的django</a>
+                </div>
+                <div class="card-body" style="height:100px">
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer text-body-secondary d-flex justify-content-between">
+                    <div>
+                        <img src="{% static 'image/ironman.jpg' %}" class="rounded-circle" width="30" height="30" alt="">
+                        Matt
+                    </div>
+                    <div>
+                        發布時間: 2024年5月5號 12:00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

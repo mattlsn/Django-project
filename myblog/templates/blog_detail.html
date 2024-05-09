@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h1>djongo</h1>
+<hr>
+<div class="mt-2">
+    <img src="{% static 'image/ironman.jpg' %}" class="rounded-circle" width="30" height="30" alt="">
+    <span class="ms-2">Matt</span>
+    <span class="ms-2">於</span>
+    <span class="m2-2">發布時間: 2024年5月5號 12:00</span>
+</div>
+<hr>
+<div class="py-2">
+這是部落客詳情
+</div>
+<hr>
+<div class="mt-2">
+    <h3>評論(10)</h3>
+    <form action="" method="POST">
+        <div class="mt-2">
+            <input type="text" class="form-control" placeholder="請輸入評論">
+            </div>
+            <div class="text-end mt-2">
+                <button type="button" class="btn btn-primary">評論</button>
+            </div>
+    </form>
+</div>
+<div class="mt-2">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <div class="d-flex justify-content-between text-body-secondary"></div>
+            <div class="user-info">
+                <img src="{% static 'image/ironman.jpg' %}" class="rounded-circle" width="50" height="50" alt="">
+                <span class="ms-2">Matt</span>
+
+            </div>
+            <div class="create-time" style="line-height: 40px;">2024年5月5號 12:00</div>
+            <div class="mt-2">這是評論內容</div>
+        </li>
+        
+      </ul>
+</div>
+{% endblock %}
